@@ -19,5 +19,17 @@
         public bool Success { get; set; }
         public string Message { get; set; }
     }
+}
+public class OperationResultDecimal
+{
+    public OperationResultDecimal()
+    { }
+    public OperationResultDecimal(decimal result , string message) :this()
+    {
+        this.Result = result;
+        this.Message = message; 
+    }
 
+    public decimal Result { get; set; }
+    public string Message { get; set; }
 }
